@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+<h1>About this site</h1>
 
-```{r}
-1 + 1
-```
+<p>This site has been created expressly with the purposes of fulfilling the requirements for Lab02 for Data Engineering. As such, the information in here has been curated solely for educational purposes</p>

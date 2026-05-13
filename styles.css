@@ -1,1 +1,116 @@
 /* css styles */
+
+body {
+  font-family: Helvetica, Sans-Serif;
+  font-size: 16px;
+}
+
+/* Centers the whole page content */
+.page-wrapper {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+h1,
+h2 {
+  font-size: 16pt;
+}
+
+h3,
+h4 {
+  font-size: 14pt;
+}
+
+/* h2 section: text left, R code/output right */
+.two-col-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: start;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.text-col {
+  grid-column: 1;
+}
+
+.code-col {
+  grid-column: 2;
+}
+
+/* R output styling */
+.cell-output-display,
+.cell-output-stdout {
+  background-color: #E5E5E5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sit-info-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.sit-logo img {
+  width: auto;
+}
+
+.sit-text {
+  font-size: 14px;
+  line-height: 1.35;
+  color: black;
+}
+
+/* h3 section: image beside paragraph */
+.project-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: start;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.project-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-row p {
+  width: 100%;
+}
+
+/* Makes layout stack nicely on smaller screens */
+@media (max-width: 700px) {
+  .two-col-section {
+    grid-template-columns: 1fr;
+  }
+
+  .text-col,
+  .code-col {
+    grid-column: 1;
+  }
+
+  .project-row {
+    flex-direction: column;
+  }
+
+  .project-img {
+    max-width: 100%;
+    width: 100%;
+  }
+}

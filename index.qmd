@@ -1,11 +1,64 @@
 ---
-title: "temp_website"
+title: "Lab02"
+css: styles.css
 ---
 
-This is a Quarto website.
+::: {.page-wrapper}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {.sit-info-box}
+
+::: {.sit-logo}
+![](img/lab_sit_logo.png)
+:::
+
+::: {.sit-text}
+The Singapore Institute of Technology (SIT) is Singapore’s first University of Applied Learning and the third largest university by intake in Singapore. SIT’s mission is to maximise the potential of our learners and to innovate with industry, through an integrated applied learning and research approach, so as to contribute to the economy and society.
+:::
+
+:::
+
+
+<h1>Header 01</h1>
+
+This is text.
+
+<h2>Header 02</h2>
+
+::: {.two-col-section}
+
+::: {.text-col}
+Paragraphically, this is more text. Have a d6 dice roller in R.
+:::
+
+::: {.code-col}
 
 ```{r}
-1 + 1
+sample(1:6, size = 1)
 ```
+
+:::
+
+:::
+
+<h3>A Previous Project</h3>
+
+::: {.project-row}
+
+<img src="img/Figure_1.png" alt="A map of commonly used words found in scam texts" class="project-img"/>
+
+<p>
+The image above is a word cloud created using hundreds of actual scam emails.
+It was used in a presentation for INF1002 Programming Fundamentals for a scam
+detecting email reader.
+</p>
+
+:::
+
+<h4>Video included for Educational Purposes</h4>
+
+{{< video https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D width="150" height="100" >}}
+
+<p> Disclaimer: This is an educational website only. </p>
+
+:::
+
